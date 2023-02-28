@@ -9,15 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LGUI>, <&to 1>;
-        };
-    };
+        
         keymap {
                 compatible = "zmk,keymap";
 
@@ -30,7 +22,7 @@
                         bindings = <
    &kp TAB   &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp SEMI    &kp MINUS
    &kp LSHIFT &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O &kp SQT
-   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &td0
+   &kp LCTRL &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H  &kp COMMA &kp DOT &kp FSLH &kp LGUI
                   &kp DEL &lt 1 RET &kp LALT   &kp LSHIFT &lt 2 SPACE &kp BSPC
                         >;
                 };
